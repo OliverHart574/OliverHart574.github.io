@@ -297,7 +297,9 @@ body {
 }
 /* Drunk Text - End */
 
-
+#rouvePortrait {
+	width: 500px;
+}
 
 
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">config.history.controls = false;
@@ -3632,7 +3634,7 @@ Then it all came together for me, in June&#39;s demolished office. The docks. Ju
 [[Rouve-&gt;Rouve_desc]]
 &lt;&lt;else&gt;&gt;
 You need to unlock this character by meeting them!
-&lt;&lt;endif&gt;&gt;</tw-passagedata><tw-passagedata pid="114" name="Rouve_desc" tags="noreturn" position="3.3333333333333335,576.6666666666667" size="100,100">&lt;ul&gt;
+&lt;&lt;endif&gt;&gt;</tw-passagedata><tw-passagedata pid="114" name="Rouve_desc" tags="noreturn" position="3.3333333333333335,575.0000000000001" size="100,100">&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Name:&lt;/strong&gt; Rouve &quot;Roo&quot; Pelletier&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Home country:&lt;/strong&gt; Canada&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Species:&lt;/strong&gt; Arctic Wolf&lt;/li&gt;
@@ -3642,9 +3644,9 @@ You need to unlock this character by meeting them!
 &lt;li&gt;&lt;strong&gt;Bio:&lt;/strong&gt; &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;&lt;div class=&quot;imageBox&quot;&gt;&gt;
-&lt;img src=&quot;img/rouve.jpg&quot;&gt;
-&lt;&lt;/div&gt;&gt;
+&lt;div class=&quot;imageBox&quot;&gt;
+&lt;img id=&quot;rouvePortrait&quot; src=&quot;img/rouve.jpg&quot;&gt;
+&lt;/div&gt;
 
 &lt;&lt;nobr&gt;&gt;
 &lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="115" name="Char Template" tags="" position="232,0" size="100,100"></tw-passagedata><tw-passagedata pid="116" name="Content to use (explanation of key)" tags="" position="236,135" size="100,100">This key is to a safe in the ranger station. Inside the safe there is a large sum of money — bills and coins and such — that I have agreed to manage for her. The Northern Station operates entirely on cash, so it is important for her to have some money, but not to be able to access it as she would like. So I agreed to hold on to the key for her. This is because…&quot; the doe trailed off, letting her words linger in the cold air, and for a time, there was nothing said between them except their hushed breathing. </tw-passagedata><tw-passagedata pid="117" name="Investigating Jesse 1" tags="incomplete" position="315,4333" size="100,100">The ride down to the docks that afternoon was uneventful. We tore down the hills that encompassed &quot;no-man&#39;s-land&quot; — the space between the town of North Station and the docks — at our usual pace: June roaring ahead, and me and Summer lagging a bit behind. 
@@ -3847,11 +3849,13 @@ Finished with my scent after what felt like twenty minutes, Rouve pulled her fac
 
 Rouve did everything but look at me. The wolf shook her head a few times, as if trying to throw off my musk, which clouded her mind. &quot;Yeah, I uhhhh think so. The human scent is strong, but I could smell Jesse on you. It wasn&#39;t much to go off of, but I think he might still be around here.&quot;
 
-[[&quot;You lead the way then,&quot;-&gt;Investigating Jesse 6 | Meeting Rouve | The Choice]] I said, wanting to get moving so I could forget about getting huffed by the wolf.</tw-passagedata><tw-passagedata pid="122" name="Investigating Jesse 6 | Meeting Rouve | The Choice" tags="ship" position="333,5061" size="100,100">&quot;So this is it?&quot; I said, hoping the answer would be an emphatic ‘no.&#39;
+[[&quot;You lead the way then,&quot;-&gt;Investigating Jesse 6 | Meeting Rouve | The Choice]] I said, wanting to get moving so I could forget about getting huffed by the wolf.</tw-passagedata><tw-passagedata pid="122" name="Investigating Jesse 6 | Meeting Rouve | The Choice" tags="ship" position="333,5061" size="100,100">For the better part of thirty minutes, we followed Rouve around the docks, searching around wharfs, warehouses and shoddy homes, until we carved out along the fringes of the lake, where the houses and buildings thinned out a little more, and seemed to droop over and sag inwards like ripening fruit. The four of us now stood in front of a white, two-story home. I knew the type from back on the east coast. Homes like these were older than sin, and signs of neglect showed up faster than pimples on a teenager&#39;s face. This one had all the fixings of a standard home — a porch, single window set in the upstairs bedroom, two enormous windows (shades drawn) on the ground floor, and a door around back. Only sign that this thing belonged in North Station was its peeling paint, hard-shifting foundations, and the metal riveted onto rotten wood, like bandages applied to festering wounds.
 
-Rouve nodded. &quot;Unless my nose is wrong, this is it. His scent is strongest in there — but I&#39;m getting some other scents too. Lots of other scents.&quot; She took another exploratory sniff at the air, inhaling and exhaling steam.
+&quot;So this is it?&quot; I said, hoping the answer would be an emphatic no.&quot;
 
-For the better part of thirty minutes, we followed Rouve around the docks, searching around wharfs, warehouses and shoddy homes, until we carved out along the fringes of the lake, where the houses and buildings thinned out a little more, and seemed to droop over and sag inwards like ripening fruit. The four of us now stood in front of a white, two-story home. I knew the type from back on the east coast. Homes like these were older than sin, and signs of neglect showed up faster than pimples on a teenager&#39;s face. This one had all the fixings of a standard home — a porch, single window set in the upstairs bedroom, two enormous windows (shades drawn) on the ground floor, and a door around back. Only sign that this thing belonged in North Station was its peeling paint, hard-shifting foundations, and the metal riveted onto rotten wood, like bandages applied to festering wounds.
+Rouve nodded. &quot;Unless my nose is wrong, this is it. His scent is strongest in there — but I&#39;m getting some other scents too. Lots of other scents.&quot; She took another exploratory sniff at the air, inhaling and exhaling steam. 
+
+&quot;I think I smell cigs. And blood. Lots of blood.&quot;
 
 &quot;Not the best looking place,&quot; I remarked. &quot;Looks like someone took a flamethrower to it at one point.&quot;
 
@@ -3861,7 +3865,7 @@ The corgi pointed her nose up and pulled cold air into her snout. &quot;I&#39;m 
 
 &quot;Wait,&quot; I said, clapping Summer on the shoulder as she started forward. &quot;What if it&#39;s dangerous?&quot;
 
-She looked at me for a hard second and then removed my hand from her shoulder. &quot;If you don&#39;t feel safe going inside, then stay out here.&quot;
+She looked at me for a hard second and then removed my hand from her shoulder. She had a setern look on her face, not something I&#39;ve ever seen before. &quot;If you don&#39;t feel safe going inside, then stay out here.&quot;
 
 &lt;em&gt;Shit, she&#39;s going to think I&#39;m a coward.&lt;/em&gt;
 
@@ -3889,9 +3893,9 @@ Or
 &lt;&lt;nobr&gt;&gt;
 &lt;&lt;audio &quot;chaosMind&quot; volume 0.4 loop play&gt;&gt;
 &lt;&lt;audio &quot;citySounds&quot; stop&gt;&gt;
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="123" name="Investigating Jesse 7 | Rouve Joins" tags="incomplete" position="256,5219" size="100,100">&quot;I think the wolf should come with us,&quot; I said. 
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="123" name="Investigating Jesse 7 | Rouve Joins" tags="ship" position="256,5219" size="100,100">&quot;I think the wolf should come with us,&quot; I said. 
 
-Rouve&#39;s posture seemed to jolt into rigidness, as if volted by her collar. She looked over at me with wide &lt;span id=&quot;rouveEyes&quot;&gt;eyes&lt;/span&gt;. 
+Rouve&#39;s posture seemed to jolt into rigidness, as if volted by her collar. She looked over at me with wide, excited &lt;span id=&quot;rouveEyes&quot;&gt;eyes&lt;/span&gt;. 
 
 I shrugged. &quot;She might be good in a fight.&quot;
 
@@ -3903,29 +3907,39 @@ Summer let out a heavy sigh. &quot;I guess I can&#39;t stop you anyway. But you 
 
 Rouve explosively nodded. She looked like you could tell her that water isn&#39;t wet and she&#39;d agree with you. &quot;Oh yeah, you got it. Careful. You got it.&quot;
 
-&quot;And don&#39;t fight if you can avoid it,&quot; Summer said, biting her bottom lip. She was worried, I could tell just by looking at her. Rouve posted up at my side, making me appreciate Summer&#39;s position in life being so short. I felt her heavy hand patting me on the back with a few friendly slaps.
+&quot;And don&#39;t fight if you can avoid it,&quot; Summer said, biting her bottom lip. She was worried, I could tell just by looking at her. Rouve posted up at my side, making me appreciate Summer&#39;s position in life being so short. I felt Rouve&#39;s heavy hand patting me on the back with a few friendly slaps.
 
-&quot;C&#39;mon I&#39;m like… the most peaceful person I know,&quot; she said, clearly forgetting the way she physically assaulted you when she first met you. &quot;Now, are we going in or what? I&#39;m ready to LIGHT this candle!&quot; she exclaimed.
+&quot;C&#39;mon I&#39;m like… the most peaceful person I know,&quot; she said, clearly forgetting the way she physically assaulted you when she first met you. &quot;Now, are we going in or what? I&#39;m ready to LIGHT this candle!&quot;
 
-&quot;I think is a good idea if you and the human go through the back,&quot; June said with a doubtful look. &quot;The wolf will keep him safe, and he will keep her safe. And we will be one big happy family breaking and entering. Jesse&#39;s home.&quot;
+&quot;I think is a good idea if you and the human go through the back,&quot; June said with a doubtful look. &quot;The wolf will keep him safe, and he will keep her safe. And we will be one big happy family breaking and entering into Jesse&#39;s home.&quot;
 
-&quot;Right. We&#39;ll try the front door first — see if anyone comes to the front. And if we don&#39;t get anything, we go in,&quot; Summer said thoughtfully.
+&quot;If this &lt;em&gt;is his home&lt;/em&gt;,&quot; Summer replied. She seemed to be evaluating the house as a whole, as if searching for something on the outside, or for someone to appear in one of the blackened windows.
 
-So we split off into pairs: Summer and June knocking and hollering at the front, and Rouve and I waiting at the back door.
+&quot;I don&#39;t know who lives here,&quot; June said, marching forward, &quot;but I suppose now is the time to find out.&quot;
 
-&quot;Are you nervous?&quot; I asked, increasingly grateful for the gun in my coat pocket. Rouve was uncomfortably close to me now, leaning over me and breathing hard, like she&#39;d just climbed up a few flights of stairs.
+&quot;Right. We&#39;ll try the front door first — see if anyone comes to the door. And if we don&#39;t get anything, we go in,&quot; Summer said, nodding.
 
-&quot;N-nervous?&quot; she repeated with a stutter in her voice. &quot;Of course not. I&#39;m excited to finally get in on some action. Do you have any idea how long I&#39;ve wanted to do things like this?&quot;
+So we split off into pairs: Summer and June knocking and hollering at the front, and Rouve and I waiting at the back door for a signal.
 
-I shook my head.
+&quot;Are you nervous?&quot; I asked, increasingly grateful for the gun in my coat pocket. Rouve was uncomfortably close to me now, leaning over me and breathing hard, like she&#39;d just climbed up a few flights of stairs. Her breath didn&#39;t smell awful like I thought it would, but she was practically breathing a wet trail down the nape of my neck.
 
-&quot;A long time.&quot; And with that, Rouve bent forward and licked my face. I recoiled in shock when I felt her hot, wet tongue slap across my left cheek.
+&quot;N-nervous?&quot; she repeated with a very obvious nervous stutter in her voice. &quot;Of c-course not. I&#39;m excited to finally get in on some action. Do you have any idea how long I&#39;ve wanted to do things like this?&quot;
 
-&quot;What the hell?&quot; I said, biting to keep my voice low. I felt my sticky face and looked up at Rouve, who was wide-eyed. &quot;Did you just lick my face?&quot;
+I shook my head. &quot;Is now really the time to-&quot;
+
+&quot;A long time,&quot; Rouve said. And with that, the massive wolfess bent forward and drew her massive tongue across my left cheek. I recoiled in shock.
+
+&quot;What the fuck?&quot; I said, biting to keep my voice low. I felt my sticky face and looked up at Rouve, who was wide-eyed with confusion. &quot;Did you just lick my face?&quot;
 
 &quot;I- I was just trying to thank you for sticking up for me…&quot; she trailed off. &quot;That&#39;s- that&#39;s not a thing humans do, is it?&quot;
 
-I used my new &lt;span id=&quot;scarfColor&quot;&gt;ranger scarf&lt;/span&gt; to wipe away her spit. &quot;No, it&#39;s not. But you&#39;re welcome, anyway.&quot; I felt all at once deeply honored that she had decided to ‘thank me&#39; in such a forward way, perplexed at canine behavior, and violated. I was working through this peculiar cocktail when we heard Summer&#39;s whistle. That was the signal.
+I used my new &lt;span id=&quot;scarfColor&quot;&gt;ranger scarf&lt;/span&gt; to wipe away her spit. &quot;No, it&#39;s not. But you&#39;re welcome, anyway.&quot; I felt all at once deeply honored that she had decided to ‘thank me&#39; in such a forward way, perplexed at canine behavior, and violated. I was working through this peculiar cocktail when we heard Summer&#39;s whistle. That was the signal to go in.
+
+&quot;Ready?&quot; I said, looking up into Rouve&#39;s features. Her mouth was partially open, teeth clenched together, either out of fear or excitement, or maybe both. 
+
+Rouve nodded down at me. &quot;B-born ready,&quot; she said.
+
+With my proximity to her, I could feel her small tremors running all throughout her hulking body.
 
 Rouve and I started for the ruined concrete steps that led to the back door. I twisted on the knob and pulled back.
 
@@ -3949,7 +3963,7 @@ I pulled open the back door and stepped inside.
 
 [[Continue-&gt;Investigating Jesse 8 | Rouve Doesn&#39;t Join 1]]</tw-passagedata><tw-passagedata pid="125" name="Investigating Jesse 8 | Rouve Joins 1" tags="incomplete" position="258,5369" size="100,100">The door swung wide and out came the stinging miasma of cigarettes and something else; something that made Rouve wince.
 
-I took a cautious, quiet step, onto the old wooden floors. It was dark enough for me to draw out my lighter and flick it open, bringing a small flame to life. It threw its meager light out, enough for me to see that I was in a kitchen of sorts. There were windows here too, but they&#39;d been long-since blacked out with garbage bags and tape.
+I took a cautious, quiet step, onto the old wooden floors. It was dark enough for me to draw out my lighter and flick it open, bringing the small flame to life. It threw its meager light out, enough for me to see that I was in a kitchen of sorts. There were windows here too, but they&#39;d been long-since blacked out with garbage bags and tape.
 
 I moved further into the house, its old moans and creaks dragging themselves through the stagnant air.
 
