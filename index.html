@@ -515,6 +515,11 @@ $(document).on(':passagestart', function (ev) {
 
 }());
 
+// fading-macro-set.min.js, for SugarCube 2, by Chapel
+// v1.1.0, 2021-04-20, 53d1a20e9321b3782a303cf7dbe00f5c51e947db
+;Macro.add("fadein",{tags:null,handler:function(){var t,a,s=$(document.createElement("span")),e=this.payload[0].contents;if(0===this.args.length)return this.error("no arguments given");t=Util.fromCssTime(this.args[0]),a=this.args.length>1?Util.fromCssTime(this.args[1]):0,s.wiki(e).addClass("macro-"+this.name).appendTo(this.output).hide().delay(a).fadeIn(t)}}),Macro.add("fadeout",{tags:null,handler:function(){var t,a,s=$(document.createElement("span")),e=this.payload[0].contents;if(0===this.args.length)return this.error("no arguments given");t=Util.fromCssTime(this.args[0]),a=this.args.length>1?Util.fromCssTime(this.args[1]):0,s.wiki(e).addClass("macro-"+this.name).appendTo(this.output).delay(a).fadeOut(t)}});
+// end fading-macro-set.min.js
+
 </script><tw-tag name="Changed-to-&quot;I&quot;" color="green"></tw-tag>,<tw-tag name="Frostburn" color="blue"></tw-tag>,<tw-tag name="Ship" color="green"></tw-tag>,<tw-tag name="failure" color="red"></tw-tag>,<tw-tag name="good" color="green"></tw-tag>,<tw-tag name="incomplete" color="red"></tw-tag>,<tw-tag name="new-content-flag" color="gray"></tw-tag>,<tw-tag name="ship" color="green"></tw-tag><tw-passagedata pid="1" name="Title" tags="title" position="455,0" size="100,100">Welcome to A Red Winter v 0.1.9
 
 Please know that this game makes use of sound. &lt;span id=&quot;warning&quot;&gt;If you do not wish to use sound, please utilize the volume controls located in the &quot;SETTINGS&quot; panel on the left.&lt;/span&gt;
@@ -620,27 +625,29 @@ Another icy gale ripped through me. The wind howled like the tundra was laughing
 
 The bus would probably have heating anyway.
 
-[[Continue-&gt;On The Bus]]</tw-passagedata><tw-passagedata pid="9" name="Frostburn Title" tags="" position="441,568" size="100,100">&lt;&lt;audio &quot;fireCrackle&quot; stop&gt;&gt;
-&lt;&lt;timed 6s&gt;&gt;
+[[Continue-&gt;On The Bus]]</tw-passagedata><tw-passagedata pid="9" name="Frostburn Title" tags="" position="441,568" size="100,100">&lt;&lt;fadein 6s&gt;&gt;
 &lt;div id=&quot;centerMe&quot;&gt;
 Oliver_Hart presents:
 &lt;/div&gt;
-&lt;&lt;/timed&gt;&gt;
-&lt;&lt;timed 10s&gt;&gt;
+&lt;&lt;/fadein&gt;&gt;
+&lt;&lt;fadein 6s 6s&gt;&gt;
 &lt;div id=&quot;centerMe&quot;&gt;
 &lt;h1&gt;&lt;span id=&quot;scarfColor&quot;&gt;A Red Winter&lt;/span&gt;&lt;/h1&gt;
 &lt;/div&gt;
-&lt;&lt;/timed&gt;&gt;
-&lt;&lt;timed 15s&gt;&gt;
+&lt;&lt;/fadein&gt;&gt;
+&lt;&lt;fadein 6s 9s&gt;&gt;
 &lt;div id=&quot;centerMe&quot;&gt;
 A /hmofa/ game
 &lt;/div&gt;
-&lt;&lt;/timed&gt;&gt;
-&lt;&lt;timed 17s&gt;&gt;
+&lt;&lt;/fadein&gt;&gt;
+&lt;&lt;fadein 6s 12s&gt;&gt;
 &lt;div id=&quot;centerMe&quot;&gt;
 [[Continue-&gt;Frostburn Punks]]
 &lt;/div&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="10" name="provoke the polar bear" tags="ship" position="592,1105" size="100,100">I thought to myself, what was the worst thing that I could say to the bear to get his attention? I had a few ideas that I threw around casually among other &#39;pinkies.&#39; I had no particular love for anthros. They were animalistic, primitive, territorial, and generally conceited. To tell the truth, I hadn&#39;t yet met one that I cared for, and I wasn&#39;t about to start with this fucking bear.
+&lt;&lt;/fadein&gt;&gt;
+&lt;&lt;nobr&gt;&gt;
+&lt;&lt;audio &quot;fireCrackle&quot; stop&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="10" name="provoke the polar bear" tags="ship" position="592,1105" size="100,100">I thought to myself, what was the worst thing that I could say to the bear to get his attention? I had a few ideas that I threw around casually among other &#39;pinkies.&#39; I had no particular love for anthros. They were animalistic, primitive, territorial, and generally conceited. To tell the truth, I hadn&#39;t yet met one that I cared for, and I wasn&#39;t about to start with this fucking bear.
 
 &quot;&lt;&lt;hovertip &quot;A derogatory term for predators.&quot;&gt;&gt;Snapjaw,&quot;&lt;&lt;/hovertip&gt;&gt; I said, plainly, calmly, as evenly as he could despite the shuddering cold.
 
@@ -747,18 +754,17 @@ My traveling &#39;companion&#39;, the polar bear I&#39;d met at the bus stop, wo
 &lt;&lt;nobr&gt;&gt;
 &lt;&lt;audio &quot;windHowl&quot; volume 0.4 loop play&gt;&gt;
 &lt;&lt;audio &quot;seedsOfTheCrown&quot; volume 0.5 loop play&gt;&gt;
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="15" name="Frostburn Punks" tags="" position="445,711" size="100,100">&lt;&lt;timed 5s&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="15" name="Frostburn Punks" tags="" position="445,711" size="100,100">&lt;&lt;fadein 5s&gt;&gt;
 &lt;div id=&quot;centerMe&quot;&gt;
 &lt;h1&gt;&quot;Northern Rangers&quot;&lt;/h1&gt;
 &lt;/div&gt;
 &lt;div id=&quot;centerMe&quot;&gt;
 &lt;p&gt;&quot;A loose organization of freelancers, mercenaries, and hired-hands that make a living working the increasingly lucrative agricultural boom in the frozen wastelands of the north. They serve as guards, shepherds for arctic flocks, fishermen, and peace officers. They are often known as &#39;frost punks&#39; by northern natives due to their tendency to drift from station to station.&quot;&lt;/p&gt;
 &lt;/div&gt;
-
 &lt;div id=&quot;centerMe&quot;&gt;
 [[Continue-&gt;Frostburn Info]]
 &lt;/div&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="16" name="Jumping Jack&#39;s Night 1" tags="ship" position="183,1579" size="100,100">A hungry fire crackled and snapped in the center of what appeared to be a sleepy drifter&#39;s bar. There were a few stocked tables with some reindeer just tucking into a meal (iceberg lettuce, dressing, and bright red holly), an arctic hare behind a polished bar, and at the very far end of the bar sat that polar bear I had met at the bus stop.
+&lt;&lt;/fadein&gt;&gt;</tw-passagedata><tw-passagedata pid="16" name="Jumping Jack&#39;s Night 1" tags="ship" position="183,1579" size="100,100">A hungry fire crackled and snapped in the center of what appeared to be a sleepy drifter&#39;s bar. There were a few stocked tables with some reindeer just tucking into a meal (iceberg lettuce, dressing, and bright red holly), an arctic hare behind a polished bar, and at the very far end of the bar sat that polar bear I had met at the bus stop.
 
 Somewhere, a radio was playing something in French.
 
@@ -772,6 +778,7 @@ or
 
 [[Go directly to the Igloo Inn for the night-&gt;Igloo Inn Night 1]]
 &lt;&lt;nobr&gt;&gt;
+&lt;&lt;set $playerMetTress to true&gt;&gt;
 &lt;&lt;audio &quot;doorOpen&quot; volume 0.3 play&gt;&gt;
 &lt;&lt;audio &quot;seedsOfTheCrown&quot; stop&gt;&gt;
 &lt;&lt;audio &quot;fireCrackle&quot; volume 0.7 loop play&gt;&gt;
@@ -1223,6 +1230,7 @@ I watched her with some mild fascination. I&#39;d never cared about anthros much
 
 Or I could keep to myself, and [[steer the conversation in safer directions and go to the mechanics-&gt;Go to the garage]]
 &lt;&lt;nobr&gt;&gt;
+&lt;&lt;set $playerMetTress to true&gt;&gt;
 &lt;&lt;audio &quot;doorOpen&quot; volume 0.5 play&gt;&gt;
 &lt;&lt;audio &quot;fireCrackle&quot; volume 0.6 loop play&gt;&gt;
 &lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="31" name="Summer insists" tags="ship" position="708,1935" size="100,100">&quot;Actually, I think I need to see about getting some supplies first. But thanks anyway.&quot; I had decided when he first met this boisterous little corgi that I&#39;d need frequent breaks from her if I was to be working with her at the station. It was break time already.
@@ -3482,7 +3490,8 @@ She sighed deeply, at last exhausting the small wells of her courage in one sing
 $playerFoundSummerKey in In June&#39;s Garage
 $summersPastStory1 in End of Summer Attacked
 $playerSpeaksToTress in Buy Another Round
-$playerMetSummer in Meeting Summer</tw-passagedata><tw-passagedata pid="106" name="Ask her about the safe and the frost honey | 2" tags="incomplete" position="3,7695" size="100,100">&lt;em&gt;&quot;Today is a small victory.&quot;&lt;/em&gt;
+$playerMetSummer in Meeting Summer
+$playerMetTress </tw-passagedata><tw-passagedata pid="106" name="Ask her about the safe and the frost honey | 2" tags="incomplete" position="3,7695" size="100,100">&lt;em&gt;&quot;Today is a small victory.&quot;&lt;/em&gt;
 
 &quot;Look, it&#39;s not my place,</tw-passagedata><tw-passagedata pid="107" name="Day Two" tags="incomplete" position="443,7028" size="100,100">&lt;strong&gt;!!IN PROGRESS!!&lt;strong&gt;
 
@@ -3636,6 +3645,9 @@ Then it all came together for me, in June&#39;s demolished office. The docks. Ju
 - Oliver
 &lt;&lt;if $playerMetSummer is true&gt;&gt;
 [[Summer Keaton-&gt;Summer_desc]]
+&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $playerMetJune is true&gt;&gt;
+[[June Magnus-&gt;June_desc]]
 &lt;&lt;endif&gt;&gt;
 &lt;&lt;if $playerMetRouve is true&gt;&gt;
 [[Rouve &quot;Roo&quot; Pelletier-&gt;Rouve_desc]]
