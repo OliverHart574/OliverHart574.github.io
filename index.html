@@ -1644,6 +1644,7 @@ Her chest was heaving, her shoulders forward, &lt;span id=&quot;juneEyes&quot;&g
 
 [[Continue-&gt;Hunter, Summer and June at the station (Hunter guns it forward)]]
 &lt;&lt;nobr&gt;&gt;
+&lt;&lt;set $hunterWinsAgainstJune to true&gt;&gt;
 &lt;&lt;audio &quot;snowMobileIdle&quot; stop&gt;&gt;
 &lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="46" name="Summer Tackles Hunter; Hunter buys a snowmobile" tags="ship" position="14,2380" size="100,100">That was a markup. I was about to say something when Summer bounded between the two of us. She was frantic, covered in her own dusting of snow. She paused for only a fraction of a second.
 
@@ -1681,6 +1682,7 @@ The doe hesitated. Then her expression turned hard. &quot;He pays the human tax.
 
 [[Continue-&gt;Hunter, Summer and June at the station (Hunter kicks June)]]
 &lt;&lt;nobr&gt;&gt;
+&lt;&lt;set $hunterWinsAgainstJune to true&gt;&gt;
 &lt;&lt;audio &quot;junesTheme&quot; stop&gt;&gt;
 &lt;&lt;audio &quot;summersTheme&quot; volume 0.5 loop play&gt;&gt;
 &lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="47" name="Hunter, Summer and June at the station (Hunter kicks June)" tags="ship" position="39,2527" size="100,100">One for the other&#39;s sake. One more for my bruised body. I swallowed the pain killer with some coffee while June, leaning against Summer&#39;s desk, wormed a cigarette out of her pocket. I felt crammed into Summer&#39;s tiny office, drinking very stale, day-old coffee, all the cheer sucked out of it. I tried downing the swill with as little grimacing and choking as possible. It was more about getting the pills in me than anything else.
@@ -3512,7 +3514,8 @@ $playerSpeaksToTress in Buy Another Round
 $playerMetSummer in Meeting Summer
 $playerMetTress in Order a drink and breakfast with summer
 $playerMetOtto in Hunt for Summer Provisions
-$hunterKnowsAboutAddiction in Hunt for summer at the station</tw-passagedata><tw-passagedata pid="106" name="Ask her about the safe and the frost honey | 2" tags="incomplete" position="1206,6941" size="100,100">&lt;em&gt;&quot;Today is a small victory.&quot;&lt;/em&gt;
+$hunterKnowsAboutAddiction in Hunt for summer at the station
+$hunterWinsAgainstJune in gun it forward and summer tackles hunter</tw-passagedata><tw-passagedata pid="106" name="Ask her about the safe and the frost honey | 2" tags="incomplete" position="1206,6941" size="100,100">&lt;em&gt;&quot;Today is a small victory.&quot;&lt;/em&gt;
 
 &quot;Look, it&#39;s not my place,</tw-passagedata><tw-passagedata pid="107" name="Day Two" tags="incomplete" position="401,6475" size="100,100">&lt;strong&gt;!!IN PROGRESS!!&lt;/strong&gt;
 
@@ -3678,7 +3681,7 @@ Then it all came together for me, in June&#39;s demolished office. The docks. Ju
 &lt;&lt;endif&gt;&gt;
 &lt;&lt;if $playerMetOtto is true&gt;&gt;
 [[Otto Pelletier-&gt;Otto_dec]]
-&lt;&lt;endif&gt;&gt;</tw-passagedata><tw-passagedata pid="114" name="Rouve_desc" tags="noreturn" position="128,703" size="100,100">!Rouve &quot;Roo&quot; Pelletier
+&lt;&lt;endif&gt;&gt;</tw-passagedata><tw-passagedata pid="114" name="Rouve_desc" tags="noreturn" position="128,701.3333333333334" size="100,100">!Rouve &quot;Roo&quot; Pelletier
 A woman of intimidating build and broad shoulders, Rouve stands at an impressive six foot six, boasting the strength one would expect from a matured Arctic Wolfess, the two golden hoops around her ears and the focused amethyst gaze painting a clear picture of a strong woman willing to defend her own. The sudden outburst of giddy delight and almost innocent boasting after a certain revelation however hint she&#39;s not quite as agressive as she might seem.
 !!Nationality
 Canadadian
@@ -4278,12 +4281,12 @@ Her words caught me off guard. My mind raced to come up with an excuse — anyth
 [[Continue-&gt;Please stay here tonight]]
 &lt;&lt;nobr&gt;&gt;
 &lt;&lt;audio &quot;eau&quot; volume 0.5 loop play&gt;&gt;
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="133" name="Summer_desc" tags="noreturn" position="146,569" size="100,100">!Summer Keaton
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="133" name="Summer_desc" tags="noreturn" position="146,567.3333333333334" size="100,100">!Summer Keaton
 [DESC GOES HERE]
 !!Nationality
 American
 !!Species
-Pembroke Corgi
+Pembroke corgi
 !!Gender
 Female
 !!Eye Color
@@ -4294,21 +4297,34 @@ Female
 &lt;img id=&quot;rouvePortrait&quot; src=&quot;img/[NAME]&quot;&gt;
 &lt;/div&gt;
 !Hunter&#39;s Notes
-&lt;em&gt;&quot;Green eyes like clovers in a snowfield and barely up to my waist, a stout yellow-orange Corgi that stood out like the sun over the snowy plains. If nothing else, her parents named her right, she does feel like a summer day in the northern wastes, bright and cheery to a mildly infectious degree. Does not know the definition of personal space and doubt she wants to either.&quot;
+&lt;em&gt;&quot;Green eyes like clovers in a snowfield and barely up to my waist, a stout yellow-orange Corgi that stood out like the sun over the snowy plains. If nothing else, her parents named her right, she does feel like a summer day in the northern wastes, bright and cheery to a mildly infectious degree. Does not know the definition of personal space and doubt she wants to either.&lt;/em&gt;
 &lt;br&gt;
 &lt;&lt;if $summersPastStory1 is true&gt;&gt;
-One peculiarity about the dog: for as bright and as bubbly as she is, she&#39;s nursing quite an addiction to frost honey. Routinely relapses and takes her trawler out of town to &quot;get clean,&quot; as it were. My heart goes out to her.
+&lt;em&gt;One peculiarity about the dog: for as bright and as bubbly as she is, she&#39;s nursing quite an addiction to frost honey. Routinely relapses and takes her trawler out of town to &quot;get clean,&quot; as it were. My heart goes out to her.&lt;/em&gt;
 &lt;&lt;endif&gt;&gt;
-&lt;/em&gt;</tw-passagedata><tw-passagedata pid="134" name="June_desc" tags="noreturn" position="156,440" size="100,100">!Name
+&lt;/em&gt;</tw-passagedata><tw-passagedata pid="134" name="June_desc" tags="noreturn" position="157.66666666666666,441.6666666666667" size="100,100">!June Magnus
+A rather imposing Doe standing at an average five foot eight, June Magnus is a mechanic by trade, her ripped jeans, chunky snow boots and a blue-white flannel shirt suited for the dirty, cramped work of being the towns sole mechanic, fixing trawlers and snowmobiles for everyone who needs it down at the Station. As Scandinavian as they come, her piercing sapphire eyes shine with an intensity as strong as her throwing arm, well used to elbow grease and long sessions of air guitar strumming. 
 !!Nationality
+Norwegian
 !!Species
+Norwegian reindeer
 !!Gender
+Female
 !!Eye Color
+&lt;span id=&quot;juneEyes&quot;&gt;Sapphire blue&lt;/span&gt;
 !!Height, Weight, and Build
+5&#39;8&quot;, with a slender athletic build, a pair of poorly-developed antlers atop her head.
 &lt;div class=&quot;charPortraitBox&quot;&gt;
 &lt;img class=&quot;charBox&quot; src=&quot;img/NAME.jpg&quot;&gt;
 &lt;/div&gt;
-!Hunter&#39;s Notes</tw-passagedata><tw-passagedata pid="135" name="credits" tags="noreturn" position="139,312.3333333333333" size="100,100">!&lt;strong&gt;Writers&lt;/strong&gt;
+!Hunter&#39;s Notes
+&lt;em&gt;&quot;A petite Reindeer Valkyrie from the mythical lands of Norway/Scandinavia with enough bravado to make any northern warrior feel inadequate. Likes her music way too loud, her humans dead or injured and has at least three personality disorders to her name. God help me, she&#39;s the only mechanic in this fucking joint. Can&#39;t speak English for shit either.&quot;&lt;/em&gt;
+&lt;br&gt;
+&lt;&lt;if $hunterWinsAgainstJune is true&gt;&gt; 
+&quot;A friendless petite Reindeer from the mythical lands of Norway/Scandinavia that might have more huff than real puff. Won against her but man, she&#39;s... something? Probably not a great idea to have pissed off my only mechanic, but then again I don&#39;t think it was possible not to piss her off. Least she seems less willing to knock me out with a wrench.&quot;
+&lt;&lt;endif&gt;&gt;
+&lt;&lt;nobr&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="135" name="credits" tags="noreturn" position="139,312.3333333333333" size="100,100">!&lt;strong&gt;Writers&lt;/strong&gt;
 Oliver_Hart
 Tious
 &lt;hr&gt;
