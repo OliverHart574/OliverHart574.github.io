@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
+
+tw-story {
+}
+a {
+  color: #cf0000;
+}
+
+#story-title {
+  color: white;
+}
+
+#ui-bar-toggle {
+  color: white;
+}
+
+#menu li a {
+  color: white;
+  border: 0px;
+}
+
+#ui-bar {
+  background-color: #75aacc00;
+  border-right: 0px solid #444;
+  Color: white;
+}
+
+.passage {
+  background-color: rgb(0.25,0.25,0.25,0.3);
+  border: 3px white solid;
+  padding: 15px 25px 25px 25px;
+  border-radius: 25px;
+  color: white;
+}
+
+#history-backward {
+  color: white;
+}
+
+#history-forward {
+  color: white;
+}
+
+#ui-bar-history {
+  color: white;
+}
+
+
+body {
+  font-size:120%;
+  font-weight: 400;
+  font-family: 'PT Sans', sans-serif;
+  background-color: #75AACC;
+  background-size: cover;
+  align: center;
+  max-width: 99%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: black;
+  background-image: url("img/background.png");
+  opacity 0.7
+}
+
+#centerMe{
+  text-align: center;
+}
+
+#warning{
+  color: red;
+}
+
+.slowfade .macro-repeat-insert,
+.slowfade .macro-timed-insert {
+	-webkit-transition-duration: 3s;
+	-o-transition-duration: 3ms;
+	transition-duration: 3ms;
+}
+
+/* hovertip code - Start */
+.hoverTip {
+	display: inline-block;
+	top: 4px;
+	border-width: 0px;
+    border-bottom: 2px dotted white;  /* If you want dots under the hoverable text */
+}
+.hoverTipTxt {
+	position: relative;
+	vertical-align: text-bottom;
+	line-height: 20px;
+}
+.hoverTipTxt span {
+	position: absolute;
+	visibility: hidden;
+}
+.hoverTipTxt:hover span, .hoverTipTxt:focus span {
+	visibility: visible;
+}
+.hoverBox {
+	color: white;
+	background-color: black;
+	text-align: left;
+	width: intrinsic;  /* Safari/WebKit uses a non-standard name */
+	width: -webkit-max-content;  /* Chrome */
+	width: -moz-max-content;  /* Firefox/Gecko */
+	width: max-content;
+	line-height: initial;
+	padding: 3px 10px;
+	border: #7f7f7f solid 2px;
+	border-radius: 6px;
+	box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 0.75);
+	z-index: 100;
+}
+.hoverTail::after {
+	content: "";
+	position: absolute;
+	top: 100%;  /* At the bottom of the tooltip */
+	left: 50%;
+	margin-left: -5px;
+	border-width: 8px;
+	border-style: solid;
+	border-color: #7f7f7f transparent transparent transparent;
+}
+.hoverBox a {
+	transition-duration: unset;
+}
+/* hovertip code - End */
